@@ -1,0 +1,2 @@
+# PIPELINE-do-SDLC-de-Software-com-Uso-Multiplos-Agentes-de-IA
+O desenvolvimento de software com múltiplos agentes de IA pode ser visualizado como um pipeline orquestrado, onde cada fase do ciclo de vida (SDLC) é assumida por um ou mais agentes especialistas. A abordagem fundamental para garantir o sucesso é a "Spec-First Development", onde especificações guiam os agentes, desde a concepção até o deploy
