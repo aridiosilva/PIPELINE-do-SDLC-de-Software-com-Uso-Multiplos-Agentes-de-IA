@@ -4,7 +4,7 @@
 
 O desenvolvimento de software com múltiplos agentes de IA é um pipeline orquestrado onde cada fase do ciclo de vida (SDLC) é assumida por um agente especialista. A abordagem fundamental é a **"Spec-First Development"**, onde especificações bem definidas atuam como a camada de controle que guia todos os agentes, desde a concepção até o deploy [[1]](https://github.com/xodn348/ai-native/blob/main/docs/guides/development-methodology.md).
 
-Neste modelo, o **SDLC tradicional é transformado**, e o ciclo "Prompt First" dá lugar ao "Spec First". As especificações, e não os prompts ad hoc, tornam-se a fonte única da verdade que governa o comportamento de todos os agentes [[2]](https://www.npmjs.com/package/agentic-sdlc).
+Neste modelo, o **SDLC tradicional é transformado**, e o ciclo "Prompt First" dá lugar ao "Spec First". As especificações, e não os prompts ad hoc, tornam-se a fonte única da verdade que governa o comportamento de todos os agentes [https://www.npmjs.com/package/agentic-sdlc].
 
 ---
 
@@ -12,13 +12,13 @@ Neste modelo, o **SDLC tradicional é transformado**, e o ciclo "Prompt First" d
 
 | Fase do SDLC | Agente(s) Especializado(s) | Principais Artefatos Gerados | Descrição do Fluxo de Trabalho |
 | :--- | :--- | :--- | :--- |
-| **1. Especificação e Requisitos** | Product Manager (PM), Business Analyst (BA) | PRDs, User Stories, Use Cases, `requirements.md` | O agente PM/BA converte ideias de negócio em requisitos estruturados, incluindo critérios de aceite, casos de teste e requisitos não-funcionais [[3]](https://www.npmjs.com/package/agentic-sdlc). Ferramentas como o `agentic-sdlc` usam comandos como `/pm` para iniciar esse processo [[2]](https://www.npmjs.com/package/agentic-sdlc). |
+| **1. Especificação e Requisitos** | Product Manager (PM), Business Analyst (BA) | PRDs, User Stories, Use Cases, `requirements.md` | O agente PM/BA converte ideias de negócio em requisitos estruturados, incluindo critérios de aceite, casos de teste e requisitos não-funcionais [https://www.npmjs.com/package/agentic-sdlc]. Ferramentas como o `agentic-sdlc` usam comandos como `/pm` para iniciar esse processo [[2]](https://www.npmjs.com/package/agentic-sdlc). |
 | **2. Design e Arquitetura** | System Architect (SA), UI/UX Designer | Arquitetura da Solução, ADRs, Modelo de Dados, Wireframes, `tech-specs.md` | O agente arquiteto cria opções de design com base nos requisitos, gerando ADRs (Architecture Decision Records) e diagramas. O framework **FNIN** possui um agente "Bob" para esta fase. |
-| **3. Planejamento e Backlog** | Tech Lead, PM | Backlog, Estrutura de Decomposição do Trabalho (WBS), `backlog.md` | O agente Tech Lead/PM quebra os requisitos em tarefas acionáveis e priorizadas no backlog, utilizando metodologias como MVP ou Full/Pro [[2]](https://www.npmjs.com/package/agentic-sdlc). |
+| **3. Planejamento e Backlog** | Tech Lead, PM | Backlog, Estrutura de Decomposição do Trabalho (WBS), `backlog.md` | O agente Tech Lead/PM quebra os requisitos em tarefas acionáveis e priorizadas no backlog, utilizando metodologias como MVP ou Full/Pro [https://www.npmjs.com/package/agentic-sdlc]. |
 | **4. Codificação** | Desenvolvedor(a) Full-Stack (Dev) | Código-fonte, Scripts de Migração | O agente de desenvolvimento gera o código baseado nas especificações aprovadas [[4]](https://github.com/raja21068/AutoCodeAI). Frameworks como **AutoCodeAI** possuem agentes `Coder` para essa tarefa [[4]](https://github.com/raja21068/AutoCodeAI). |
-| **5. Testes e Garantia de Qualidade** | QA Engineer, Tester, Security Agent | Testes Unitários, Testes de API, Relatórios de Segurança | O agente de QA gera e executa testes a partir dos critérios de aceite, incluindo testes unitários, de API e de usabilidade, em um ciclo de feedback [[4]](https://github.com/raja21068/AutoCodeAI). Agentes de segurança validam a conformidade e detectam vulnerabilidades [[5]](https://github.com/modu-ai/moai-adk/blob/main/.claude/skills/moai-workflow-testing/modules/automated-code-review/trust5-framework.md). |
+| **5. Testes e Garantia de Qualidade** | QA Engineer, Tester, Security Agent | Testes Unitários, Testes de API, Relatórios de Segurança | O agente de QA gera e executa testes a partir dos critérios de aceite, incluindo testes unitários, de API e de usabilidade, em um ciclo de feedback [https://github.com/raja21068/AutoCodeAI]. Agentes de segurança validam a conformidade e detectam vulnerabilidades [https://github.com/modu-ai/moai-adk/blob/main/.claude/skills/moai-workflow-testing/modules/automated-code-review/trust5-framework.md]. |
 | **6. Revisão e Aprovação** | QA, Security, Stakeholder | Relatórios de Revisão de Código, Checklist de Segurança | A saída do agente é revisada por pares humanos ou por outros agentes (ex: agente de segurança). O **IBM Bob** estrutura pontos de verificação humanos (Human-in-the-Loop) antes da execução. |
-| **7. Deploy e Operações** | DevOps Engineer | Artefatos de Deploy, Scripts de CI/CD, Configuração de Observabilidade | O agente DevOps gerencia o deploy em ambientes controlados (sandbox, staging, produção) com validações e rollback plans [[6]](https://www.npmjs.com/package/spectralswarm). |
+| **7. Deploy e Operações** | DevOps Engineer | Artefatos de Deploy, Scripts de CI/CD, Configuração de Observabilidade | O agente DevOps gerencia o deploy em ambientes controlados (sandbox, staging, produção) com validações e rollback plans [https://www.npmjs.com/package/spectralswarm]. |
 
 ---
 
@@ -26,11 +26,11 @@ Neste modelo, o **SDLC tradicional é transformado**, e o ciclo "Prompt First" d
 
 ### Frameworks de Orquestração
 
-- **[agentic-sdlc](https://www.npmjs.com/package/agentic-sdlc)** [[2]](https://www.npmjs.com/package/agentic-sdlc): Framework completo com agentes para todas as fases do SDLC. Possui uma arquitetura modular com suporte a plugins e CLI.
-- **[AutoCodeAI](https://github.com/raja21068/AutoCodeAI)** [[4]](https://github.com/raja21068/AutoCodeAI): Sistema multi-agente com sandboxing via Docker. Permite configurar modelos específicos por agente (Planner, Coder, Tester, Debugger, Critic).
-- **[SpectralSwarm](https://www.npmjs.com/package/spectralswarm)** [[6]](https://www.npmjs.com/package/spectralswarm): Implementa a metodologia PRIDES (Prototype, Review, Implement, Deploy, Extend, Secure) com 21 agentes especializados e roteamento para ferramentas externas.
-- **[SpecWeave](https://socket.dev/npm/package/@ohos-ports/specweave)** [[7]](https://socket.dev/npm/package/@ohos-ports/specweave): Camada de desenvolvimento "spec-first" com suporte a agentes paralelos e integração com GitHub/JIRA.
-- **[mcp-agentic-sdlc](https://www.npmjs.com/package/mcp-agentic-sdlc)** [[8]](https://www.npmjs.com/package/mcp-agentic-sdlc): Framework com fluxo baseado em "Project Foundation Agreement" que suporta projetos MVP, POC e Full/Pro.
+- **[agentic-sdlc](https://www.npmjs.com/package/agentic-sdlc)** : Framework completo com agentes para todas as fases do SDLC. Possui uma arquitetura modular com suporte a plugins e CLI.
+- **[AutoCodeAI](https://github.com/raja21068/AutoCodeAI)** : Sistema multi-agente com sandboxing via Docker. Permite configurar modelos específicos por agente (Planner, Coder, Tester, Debugger, Critic).
+- **[SpectralSwarm](https://www.npmjs.com/package/spectralswarm)** : Implementa a metodologia PRIDES (Prototype, Review, Implement, Deploy, Extend, Secure) com 21 agentes especializados e roteamento para ferramentas externas.
+- **[SpecWeave](https://socket.dev/npm/package/@ohos-ports/specweave)** : Camada de desenvolvimento "spec-first" com suporte a agentes paralelos e integração com GitHub/JIRA.
+- **[mcp-agentic-sdlc](https://www.npmjs.com/package/mcp-agentic-sdlc)** : Framework com fluxo baseado em "Project Foundation Agreement" que suporta projetos MVP, POC e Full/Pro.
 
 ### Padrões de Design para Agentes
 
@@ -38,11 +38,11 @@ A literatura e as ferramentas modernas destacam padrões de design fundamentais 
 
 | Padrão | Descrição | Aplicação no SDLC |
 | :--- | :--- | :--- |
-| **ReAct (Reason + Act)** | Agente alterna entre raciocínio e ação, observando resultados para ajustar o comportamento [[10]](https://blog.n8n.io/react-agent/). | Debugging iterativo, exploração de soluções alternativas. |
-| **Reflection** | Agente critica e melhora seu próprio trabalho [[9]](https://ag2ai.github.io/build-with-ag2/tutorial/agent_pattern_cookbook/). | Revisão de código gerado, automação de ciclos "gera → valida → repara". |
-| **Planning** | Agente decompõe metas complexas em etapas gerenciáveis [[9]](https://ag2ai.github.io/build-with-ag2/tutorial/agent_pattern_cookbook/). | Criação de planos de implementação e WBS. |
-| **Triage** | Classifica, prioriza e roteia requisições para agentes apropriados [[9]](https://ag2ai.github.io/build-with-ag2/tutorial/agent_pattern_cookbook/). | Roteamento de issues, triagem de requisitos. |
-| **Supervisor/Collaboration** | Agente supervisor coordena agentes especializados que colaboram entre si [[9]](https://ag2ai.github.io/build-with-ag2/tutorial/agent_pattern_cookbook/). | Orquestração do pipeline completo. |
+| **ReAct (Reason + Act)** | Agente alterna entre raciocínio e ação, observando resultados para ajustar o comportamento [https://blog.n8n.io/react-agent/]. | Debugging iterativo, exploração de soluções alternativas. |
+| **Reflection** | Agente critica e melhora seu próprio trabalho [https://ag2ai.github.io/build-with-ag2/tutorial/agent_pattern_cookbook/]. | Revisão de código gerado, automação de ciclos "gera → valida → repara". |
+| **Planning** | Agente decompõe metas complexas em etapas gerenciáveis [https://ag2ai.github.io/build-with-ag2/tutorial/agent_pattern_cookbook/]. | Criação de planos de implementação e WBS. |
+| **Triage** | Classifica, prioriza e roteia requisições para agentes apropriados [https://ag2ai.github.io/build-with-ag2/tutorial/agent_pattern_cookbook/]. | Roteamento de issues, triagem de requisitos. |
+| **Supervisor/Collaboration** | Agente supervisor coordena agentes especializados que colaboram entre si [https://ag2ai.github.io/build-with-ag2/tutorial/agent_pattern_cookbook/]. | Orquestração do pipeline completo. |
 
 ---
 
@@ -54,16 +54,16 @@ A introdução de agentes autônomos exige um modelo de governança robusto:
 Pontos de verificação obrigatórios antes de ações críticas, como:
 - Deploy em produção
 - Alterações em infraestrutura
-- Decisões arquiteturais significativas [[11]](https://www.anthropic.com/engineering/building-effective-agents)
+- Decisões arquiteturais significativas [https://www.anthropic.com/engineering/building-effective-agents]
 
 ### Ambientes Isolados (Sandboxes)
-Agentes executam código em ambientes seguros (ex: Docker) para evitar [[4]](https://github.com/raja21068/AutoCodeAI):
+Agentes executam código em ambientes seguros (ex: Docker) para evitar [https://github.com/raja21068/AutoCodeAI]:
 - Danos ao sistema
 - Impacto em outros projetos
 - Execução de código malicioso
 
 ### Validações Automatizadas
-Ciclos de "gera → valida → repara" são usados para garantir que [[4]](https://github.com/raja21068/AutoCodeAI):
+Ciclos de "gera → valida → repara" são usados para garantir que [https://github.com/raja21068/AutoCodeAI]:
 - O código gerado passa em todos os testes
 - Os critérios de aceite são atendidos
 - A qualidade é mantida antes da revisão humana
@@ -140,27 +140,27 @@ Validação: Testes de smoke e observabilidade
 
 ### Princípios Fundamentais
 
-1. **Especificações como Única Fonte da Verdade** [[1]](https://github.com/xodn348/ai-native/blob/main/docs/guides/development-methodology.md)
+1. **Especificações como Única Fonte da Verdade** [https://github.com/xodn348/ai-native/blob/main/docs/guides/development-methodology.md]
    - Todas as fases devem referenciar as especificações
    - Alterações nas specs disparam atualizações em cascata
    - Especificações estruturadas incluem: critérios de aceite, casos de teste, requisitos de segurança, observabilidade e rollback
 
-2. **Human-in-the-Loop Estratégico** [[11]](https://www.anthropic.com/engineering/building-effective-agents)
+2. **Human-in-the-Loop Estratégico** [https://www.anthropic.com/engineering/building-effective-agents]
    - Envolver humanos nas decisões de alto impacto
    - Automatizar tarefas repetitivas e previsíveis
    - Usar padrões de "Escalation" para suporte em níveis
 
-3. **Feedback Rápido e Validação Contínua** [[4]](https://github.com/raja21068/AutoCodeAI)
+3. **Feedback Rápido e Validação Contínua** [https://github.com/raja21068/AutoCodeAI]
    - Ciclos curtos de validação com limites de tentativas (ex: 5 reparos, 3 reimplementações)
    - Correções automáticas onde possível
    - Pipeline paralelo para módulos independentes
 
-4. **Segurança em Primeiro Lugar** [[4]](https://github.com/raja21068/AutoCodeAI)
+4. **Segurança em Primeiro Lugar** [https://github.com/raja21068/AutoCodeAI]
    - Isolamento de execução de agentes
    - Permissões mínimas necessárias
    - Auditoria de dependências e vulnerabilidades
 
-5. **Observabilidade e Métricas** [[5]](https://github.com/modu-ai/moai-adk/blob/main/.claude/skills/moai-workflow-testing/modules/automated-code-review/trust5-framework.md)
+5. **Observabilidade e Métricas** [https://github.com/modu-ai/moai-adk/blob/main/.claude/skills/moai-workflow-testing/modules/automated-code-review/trust5-framework.md]
    - Monitoramento contínuo dos agentes
    - Métricas de qualidade baseadas no framework TRUST 5 (Tested, Readable, Understandable, Secured, Trackable)
    - Logs, métricas, traces e alertas
@@ -176,13 +176,13 @@ Validação: Testes de smoke e observabilidade
 | Taxa de Aprovação | Pull requests aprovados na primeira revisão | > 80% |
 | Erros em Produção | Bugs detectados após deploy | Redução de 70% |
 | Satisfação do Time | Engajamento com o processo | Alta |
-| Quality Gate Score | Pontuação ponderada TRUST 5 [[5]](https://github.com/modu-ai/moai-adk/blob/main/.claude/skills/moai-workflow-testing/modules/automated-code-review/trust5-framework.md) | > 0.85 |
+| Quality Gate Score | Pontuação ponderada TRUST 5 [https://github.com/modu-ai/moai-adk/blob/main/.claude/skills/moai-workflow-testing/modules/automated-code-review/trust5-framework.md] | > 0.85 |
 
 ---
 
 ## 💻 Exemplos de Código para Agentes
 
-### Exemplo 1: Agente de Planejamento com agentic-sdlc [[2]](https://www.npmjs.com/package/agentic-sdlc)
+### Exemplo 1: Agente de Planejamento com agentic-sdlc [https://www.npmjs.com/package/agentic-sdlc]
 
 ```python
 from agentic_sdlc import Config, Agent, Workflow, setup_logging, get_logger
@@ -209,7 +209,7 @@ workflow = Workflow(
 result = workflow.execute()
 logger.info(f"Plano criado: {result}")
 
-### Exemplo 1: Agente de Planejamento com agentic-sdlc [[2]](https://www.npmjs.com/package/agentic-sdlc)
+### Exemplo 1: Agente de Planejamento com agentic-sdlc [https://www.npmjs.com/package/agentic-sdlc]
 
 ```python
 from agentic_sdlc import Config, Agent, Workflow, setup_logging, get_logger
@@ -377,10 +377,10 @@ project:
 ## 📚 Referências e Recursos
 
 ### Frameworks e Ferramentas
-- (**agentic-sdlc**)[https://www.npmjs.com/package/agentic-sdlc]: Framework para desenvolvimento com agentes
-- **AutoCodeAI**: Sistema multi-agente com Docker sandboxing
-- **SpectralSwarm**: Metodologia PRIDES com 21 agentes
-- **TAS Kit**: Conjunto de comandos para desenvolvimento agentico
+- **agentic-sdlc**[https://www.npmjs.com/package/agentic-sdlc]: Framework para desenvolvimento com agentes
+- **AutoCodeAI**[https://github.com/raja21068/AutoCodeAI]: Sistema multi-agente com Docker sandboxing
+- **SpectralSwarm**[https://www.npmjs.com/package/spectralswarm]: Metodologia PRIDES com 21 agentes
+- **TAS Kit**[]: Conjunto de comandos para desenvolvimento agentico
 - **Theia Coder**: Agente de código com plan-driven development
 - **amlog-workflow**: Instalação de agentes por papel (frontend, backend, QA, BA)
 - **mcp-agentic-sdlc**: Framework com Project Foundation Agreement
@@ -397,8 +397,3 @@ project:
 - **FullStack-Agent**: Agentes para desenvolvimento full-stack com testes orientados
 - **Enterprise AI Gateway**: Roteamento e governança de modelos
 - **Agent Pattern Cookbook**: Guia de padrões de agentes
-
-
-
-
-*Última atualização: Agosto 2026*
